@@ -6,7 +6,7 @@
 /*   By: mqaos <mqaos@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 19:54:53 by mqaos             #+#    #+#             */
-/*   Updated: 2022/11/14 18:57:22 by mqaos            ###   ########.fr       */
+/*   Updated: 2022/11/15 16:31:22 by mqaos            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static void	ft_putnbr1(int nbr)
 		write(1, "-", 1);
 	if (nbr > 9)
 		ft_putnbr1(nbr / 10);
-	write(1, &"0123456789"[nbr % 10], 1);
+	ft_printchar("0123456789"[nbr % 10]);
 }
 
 int	ft_putnbr(int nbr)

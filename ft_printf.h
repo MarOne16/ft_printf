@@ -6,7 +6,7 @@
 /*   By: mqaos <mqaos@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 19:55:16 by mqaos             #+#    #+#             */
-/*   Updated: 2022/11/14 21:20:23 by mqaos            ###   ########.fr       */
+/*   Updated: 2022/11/15 16:29:17 by mqaos            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdio.h>
 
 int		ft_putnbr(int nbr);
+int		ft_printchar(int c);
 int		ft_putnbrun(unsigned int nbr);
 int		ft_puthexa(unsigned int nbr);
 int		ft_puthexam(unsigned int nbr);

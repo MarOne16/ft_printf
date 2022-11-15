@@ -6,7 +6,7 @@
 /*   By: mqaos <mqaos@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 20:41:01 by mqaos             #+#    #+#             */
-/*   Updated: 2022/11/14 21:07:22 by mqaos            ###   ########.fr       */
+/*   Updated: 2022/11/15 16:30:21 by mqaos            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	hexaput(unsigned int nbr)
 {
 	if (nbr >= 16)
 		hexaput(nbr / 16);
-	write(1, &"0123456789abcdef"[nbr % 16], 1);
+	ft_printchar("0123456789abcdef"[nbr % 16]);
 }
 
 int	ft_puthexa(unsigned int nbr)

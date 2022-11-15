@@ -6,7 +6,7 @@
 /*   By: mqaos <mqaos@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 21:22:53 by mqaos             #+#    #+#             */
-/*   Updated: 2022/11/14 14:50:04 by mqaos            ###   ########.fr       */
+/*   Updated: 2022/11/15 16:35:33 by mqaos            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ int	ft_putstr(char *str)
 	i = 0;
 	if (str == 0)
 	{
-		write(1, "(null)", 6);
+		ft_putstr("(null)");
 		return (6);
 	}
 	while (str[i])
 	{
-		write(1, &str[i], 1);
+		ft_printchar(str[i]);
 		i++;
 	}
 	return (i);

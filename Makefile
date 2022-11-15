@@ -4,7 +4,8 @@ CFLAGS =-Wall -Wextra -Werror
 AR = ar -rc
 FT_PRINTF_H = ft_printf.h
 
-FILES =	ft_putnbr.c\
+FILES =	ft_printchar.c\
+		ft_putnbr.c\
 		ft_putnbrun.c\
 		ft_puthexa.c\
 		ft_puthexam.c\
