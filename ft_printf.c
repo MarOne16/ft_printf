@@ -6,7 +6,7 @@
 /*   By: mqaos <mqaos@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 14:32:55 by mqaos             #+#    #+#             */
-/*   Updated: 2022/11/15 16:39:46 by mqaos            ###   ########.fr       */
+/*   Updated: 2022/11/16 20:32:57 by mqaos            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,10 @@ int	ft_printf(const char *str, ...)
 	i = 0;
 	len = 0;
 	va_start(args, str);
-	if (str[0] == '%' && str[1] == 0)
-		return (0);
 	while (str[i])
 	{
+		if (str[i] == '%' && str[i + 1] == 0)
+			return (i);
 		if (str[i] == '%')
 		{
 			len += ft_formatspf(args, str[i + 1]);
